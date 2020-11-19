@@ -19,4 +19,4 @@ things useful for the project.
 
 - Each service will have to run in a dedicated container.
 
-- Services: Nginx, Wordpress, PhpMyAdmin, Ftps, Grafana, MySQL, InfluxDB, Telegraf
+- Services: **Nginx, Wordpress, PhpMyAdmin, Ftps, Grafana, MySQL, InfluxDB, Telegraf**
