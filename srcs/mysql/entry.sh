@@ -4,6 +4,8 @@ openrc default
 rc-service mariadb start
 
 mysql -u root mysql < init.sql
-mysql -u root wordpress < wordpress.sql
+
+#do not forget create and export your base before run it
+# mysql -u root wordpress < wordpress.sql
 rc-service mariadb stop
 /usr/bin/mysqld --user=mysql

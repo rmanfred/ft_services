@@ -24,7 +24,9 @@ COPY my.cnf /etc/my.cnf
 
 # Set up the user
 COPY init.sql ./
-COPY wordpress.sql ./
+
+# to add it first create account on phpmyadmin and then export your base
+# COPY wordpress.sql ./
 
 # Port 3306 is the default port for the classic MySQL protocol (port), 
 # which is used by the mysql client.

@@ -18,7 +18,7 @@ RUN apk  upgrade
 RUN apk add vsftpd openssl vim
 
 RUN adduser -D -h /var/ftp rmanfred
-RUN echo "rmanfred:12345" | chpasswd
+RUN echo "user:passw" | chpasswd
 
 RUN openssl req \
     -x509 -nodes -days 365 -newkey rsa:2048 \

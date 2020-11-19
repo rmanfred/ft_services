@@ -47,7 +47,8 @@ COPY index.html /var/www
 COPY start.sh /tmp/
 RUN chmod +x /tmp/start.sh
 
-RUN echo -e "qwerty\nqwerty" | adduser rmanfred
+#create your passw and name of user
+RUN echo -e "passw\npassw" | adduser user
 
 EXPOSE 80 443 22
 CMD ["/tmp/start.sh"]
